@@ -1,0 +1,41 @@
+{
+  "name": "beezi-open",
+  "displayName": "Beezi Open",
+  "description": "Open a repo/branch from beezi deep links",
+  "version": "0.0.1",
+  "publisher": "beezi",
+  "engines": { "vscode": "^1.85.0" },
+  "categories": ["Other"],
+  "activationEvents": [
+    "onUri"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Beezi Open",
+      "properties": {
+        "beeziOpen.baseFolder": {
+          "type": "string",
+          "default": "",
+          "description": "Base folder where repositories will be cloned. If empty, user home + /beezi-workspaces is used."
+        },
+        "beeziOpen.alwaysAskDestination": {
+          "type": "boolean",
+          "default": false,
+          "description": "If true, asks destination folder every time."
+        }
+      }
+    }
+  },
+ "scripts": {
+  "vscode:prepublish": "npm run compile",
+  "compile": "tsc -p ./",
+  "watch": "tsc -watch -p ./",
+  "package": "npx @vscode/vsce package"
+},
+  "devDependencies": {
+  "@types/node": "^20.10.0",
+  "@types/vscode": "^1.85.0",
+  "typescript": "^5.3.3"
+}
+}
