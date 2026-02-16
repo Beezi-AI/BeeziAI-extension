@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "publisher": "beezi",
   "engines": { "vscode": "^1.85.0" },
-  "icon": "images/logo.png",
+  "icon": "logo.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/Beezi-AI/BeeziAI-extension"
@@ -44,3 +44,4 @@
   "typescript": "^5.3.3"
 }
 }
+
