@@ -1,7 +1,7 @@
 # Beezi AI
 
 <p align="center">
-<img src="images/logo.png" width="200" alt="Beezi Logo">
+<img src="logo.png" width="200" alt="Beezi Logo">
 </p>
 
 **Beezi is a standalone orchestration platform designed to manage the entire AI-powered development lifecycle.**
